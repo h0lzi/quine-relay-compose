@@ -1,0 +1,699 @@
+ruby:
+  image: dgageot/quine-relay
+  ports:
+   - "8080"
+  environment:
+  - LANGUAGE=ruby
+  - NEXT=scala:8080
+  links:
+   - scala
+scala:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=scala
+  - NEXT=scheme:8080
+  links:
+   - scheme
+scheme:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=scheme
+  - NEXT=scilab:8080
+  links:
+   - scilab
+scilab:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=scilab
+  - NEXT=shell:8080
+  links:
+   - shell
+shell:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=shell
+  - NEXT=slang:8080
+  links:
+   - slang
+slang:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=slang
+  - NEXT=smalltalk:8080
+  links:
+   - smalltalk
+smalltalk:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=smalltalk
+  - NEXT=spl:8080
+  links:
+   - spl
+spl:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=spl
+  - NEXT=ml:8080
+  links:
+   - ml
+ml:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ml
+  - NEXT=subleq:8080
+  links:
+   - subleq
+subleq:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=subleq
+  - NEXT=tcl:8080
+  links:
+   - tcl
+tcl:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=tcl
+  - NEXT=thue:8080
+  links:
+   - thue
+thue:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=thue
+  - NEXT=unlambda:8080
+  links:
+   - unlambda
+unlambda:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=unlambda
+  - NEXT=vala:8080
+  links:
+   - vala
+vala:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=vala
+  - NEXT=verilog:8080
+  links:
+   - verilog
+verilog:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=verilog
+  - NEXT=vbasic:8080
+  links:
+   - vbasic
+vbasic:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=vbasic
+  - NEXT=whitespace:8080
+  links:
+   - whitespace
+whitespace:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=whitespace
+  - NEXT=xslt:8080
+  links:
+   - xslt
+xslt:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=xslt
+  - NEXT=yorick:8080
+  links:
+   - yorick
+yorick:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=yorick
+  - NEXT=zoem:8080
+  links:
+   - zoem
+zoem:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=zoem
+  - NEXT=aplus:8080
+  links:
+   - aplus
+aplus:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=aplus
+  - NEXT=ada:8080
+  links:
+   - ada
+ada:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ada
+  - NEXT=afnix:8080
+  links:
+   - afnix
+afnix:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=afnix
+  - NEXT=algol68:8080
+  links:
+   - algol68
+algol68:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=algol68
+  - NEXT=ante:8080
+  links:
+   - ante
+ante:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ante
+  - NEXT=asymptote:8080
+  links:
+   - asymptote
+asymptote:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=asymptote
+  - NEXT=ats:8080
+  links:
+   - ats
+ats:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ats
+  - NEXT=awk:8080
+  links:
+   - awk
+awk:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=awk
+  - NEXT=bc:8080
+  links:
+   - bc
+bc:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=bc
+  - NEXT=befunge:8080
+  links:
+   - befunge
+befunge:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=befunge
+  - NEXT=blc8:8080
+  links:
+   - blc8
+blc8:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=blc8
+  - NEXT=boo:8080
+  links:
+   - boo
+boo:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=boo
+  - NEXT=brainfuck:8080
+  links:
+   - brainfuck
+brainfuck:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=brainfuck
+  - NEXT=c:8080
+  links:
+   - c
+c:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=c
+  - NEXT=cpp:8080
+  links:
+   - cpp
+cpp:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=cpp
+  - NEXT=csharp:8080
+  links:
+   - csharp
+csharp:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=csharp
+  - NEXT=cduce:8080
+  links:
+   - cduce
+cduce:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=cduce
+  - NEXT=chef:8080
+  links:
+   - chef
+chef:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=chef
+  - NEXT=clojure:8080
+  links:
+   - clojure
+clojure:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=clojure
+  - NEXT=cobol:8080
+  links:
+   - cobol
+cobol:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=cobol
+  - NEXT=coffeescript:8080
+  links:
+   - coffeescript
+coffeescript:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=coffeescript
+  - NEXT=clisp:8080
+  links:
+   - clisp
+clisp:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=clisp
+  - NEXT=d:8080
+  links:
+   - d
+d:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=d
+  - NEXT=dc:8080
+  links:
+   - dc
+dc:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=dc
+  - NEXT=ec:8080
+  links:
+   - ec
+ec:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ec
+  - NEXT=emacslist:8080
+  links:
+   - emacslist
+emacslist:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=emacslist
+  - NEXT=erlang:8080
+  links:
+   - erlang
+erlang:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=erlang
+  - NEXT=fsharp:8080
+  links:
+   - fsharp
+fsharp:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=fsharp
+  - NEXT=falcon:8080
+  links:
+   - falcon
+falcon:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=falcon
+  - NEXT=false1:8080
+  links:
+   - false1
+false1:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=false
+  - NEXT=forth:8080
+  links:
+   - forth
+forth:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=forth
+  - NEXT=fortran77:8080
+  links:
+   - fortran77
+fortran77:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=fortran77
+  - NEXT=fortran90:8080
+  links:
+   - fortran90
+fortran90:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=fortran90
+  - NEXT=gambas:8080
+  links:
+   - gambas
+gambas:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gambas
+  - NEXT=gap:8080
+  links:
+   - gap
+gap:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gap
+  - NEXT=gel:8080
+  links:
+   - gel
+gel:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gel
+  - NEXT=gnuplot:8080
+  links:
+   - gnuplot
+gnuplot:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gnuplot
+  - NEXT=go:8080
+  links:
+   - go
+go:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=go
+  - NEXT=gpt:8080
+  links:
+   - gpt
+gpt:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gpt
+  - NEXT=gri:8080
+  links:
+   - gri
+gri:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=gri
+  - NEXT=groovy:8080
+  links:
+   - groovy
+groovy:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=groovy
+  - NEXT=haskell:8080
+  links:
+   - haskell
+haskell:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=haskell
+  - NEXT=haxe:8080
+  links:
+   - haxe
+haxe:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=haxe
+  - NEXT=icon:8080
+  links:
+   - icon
+icon:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=icon
+  - NEXT=intercal:8080
+  links:
+   - intercal
+intercal:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=intercal
+  - NEXT=jasmin:8080
+  links:
+   - jasmin
+jasmin:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=jasmin
+  - NEXT=java:8080
+  links:
+   - java
+java:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=java
+  - NEXT=javascript:8080
+  links:
+   - javascript
+javascript:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=javascript
+  - NEXT=julia:8080
+  links:
+   - julia
+julia:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=julia
+  - NEXT=katya:8080
+  links:
+   - katya
+katya:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=katya
+  - NEXT=lazyk:8080
+  links:
+   - lazyk
+lazyk:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=lazyk
+  - NEXT=lisaac:8080
+  links:
+   - lisaac
+lisaac:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=lisaac
+  - NEXT=llvm:8080
+  links:
+   - llvm
+llvm:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=llvm
+  - NEXT=logo:8080
+  links:
+   - logo
+logo:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=logo
+  - NEXT=lolcode:8080
+  links:
+   - lolcode
+lolcode:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=lolcode
+  - NEXT=lua:8080
+  links:
+   - lua
+lua:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=lua
+  - NEXT=make:8080
+  links:
+   - make
+make:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=make
+  - NEXT=maxima:8080
+  links:
+   - maxima
+maxima:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=maxima
+  - NEXT=msil:8080
+  links:
+   - msil
+msil:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=msil
+  - NEXT=nasm:8080
+  links:
+   - nasm
+nasm:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=nasm
+  - NEXT=neko:8080
+  links:
+   - neko
+neko:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=neko
+  - NEXT=nickle:8080
+  links:
+   - nickle
+nickle:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=nickle
+  - NEXT=objectivec:8080
+  links:
+   - objectivec
+objectivec:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=objectivec
+  - NEXT=ocaml:8080
+  links:
+   - ocaml
+ocaml:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ocaml
+  - NEXT=octave:8080
+  links:
+   - octave
+octave:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=octave
+  - NEXT=ook:8080
+  links:
+   - ook
+ook:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ook
+  - NEXT=parigp:8080
+  links:
+   - parigp
+parigp:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=parigp
+  - NEXT=parrot:8080
+  links:
+   - parrot
+parrot:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=parrot
+  - NEXT=pascal:8080
+  links:
+   - pascal
+pascal:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=pascal
+  - NEXT=perl:8080
+  links:
+   - perl
+perl:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=perl
+  - NEXT=php:8080
+  links:
+   - php
+php:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=php
+  - NEXT=piet:8080
+  links:
+   - piet
+piet:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=piet
+  - NEXT=pike:8080
+  links:
+   - pike
+pike:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=pike
+  - NEXT=postscript:8080
+  links:
+   - postscript
+postscript:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=postscript
+  - NEXT=ppt:8080
+  links:
+   - ppt
+ppt:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ppt
+  - NEXT=prolog:8080
+  links:
+   - prolog
+prolog:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=prolog
+  - NEXT=python:8080
+  links:
+   - python
+python:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=python
+  - NEXT=r:8080
+  links:
+   - r
+r:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=r
+  - NEXT=ratfor:8080
+  links:
+   - ratfor
+ratfor:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=ratfor
+  - NEXT=rexx:8080
+  links:
+   - rexx
+rexx:
+  image: dgageot/quine-relay
+  environment:
+  - LANGUAGE=rexx
