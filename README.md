@@ -20,7 +20,7 @@ Get that think going:
 curl --data-binary @QR.rb http://(ruby_exported_ip):8080/run/ruby
 
 Watch docker-compose output:
-
+```
 ruby_1       | ========================================
 ruby_1       | ruby
 ruby_1       | ruby QR.rb > QR.scala
@@ -192,7 +192,7 @@ c_1          | gcc -o QR QR.c && ./QR > QR.cpp
 c_1          | 47325
 c_1          | http://cpp:8080/run/cpp
 c_1          | [Worker: RequestDispatcher: Thread-12] ERROR Fluent - Unable to apply route
-
+```
 I did not spwan all 100 quine containers so it stops here as the next container is not running.
 
 
