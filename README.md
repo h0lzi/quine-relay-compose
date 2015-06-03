@@ -1,19 +1,21 @@
 # quine-relay-compose
 [Quine relay](https://github.com/mame/quine-relay) implemented with a network ring of Docker containers.
 Based one the work of [David Gageot] (https://github.com/dgageot/quine-relay)
-He uses kubernets. I addapted it to docker compose. 
+He uses kubernetes. I addapted it to docker compose because I wanted to get it to work on
+[Joyent Triton/ SDC-Docker] (https://www.joyent.com/developers/triton-faq)
+
 Do to it's setup (exposing ports or better the lack of it) it only works 
-out of the box on [Joyent Triton/ SDC-Docker] (https://www.joyent.com/developers/triton-faq)
+out of the box on Joyent Triton/ SDC-Docker I guess. Did not try that on boot2docker or the like.
 
 spawn all docker containers:
 
 docker-compose up. (go play a table top gome. Takes a while to spawn all the containers.)
 
-Note: For Coal and probably trinton you need to set DOCKER_TSL_VERIFIY=1 otherwise compose does not talk to the remote docker.)
+Note: For Trinton you need to set DOCKER_TLS_VERIFY=1 (even though sdc-docker setup unsets it) otherwise compose does not talk to the remote docker. (Bug???) 
 
 When done docker-compose multiplexes all docker logs so you can watch what goes on in each container.
 
-So get your IP for the ruby container (Only one with a port exported: 8080)
+So get your IP for the ruby container (The ruby container is the only one port exported public: 8080)
 
 Get that think going:
 
@@ -193,7 +195,8 @@ c_1          | 47325
 c_1          | http://cpp:8080/run/cpp
 c_1          | [Worker: RequestDispatcher: Thread-12] ERROR Fluent - Unable to apply route
 ```
-I did not spwan all 100 quine containers so it stops here as the next container is not running.
+Here I did not spwan all 100 quine containers so it stops as the next container is not running.
+
 
 
 
