@@ -9,9 +9,12 @@ out of the box on Joyent Triton/ SDC-Docker I guess. Did not try that on boot2do
 
 spawn all docker containers:
 
-docker-compose up. (go play a table top gome. Takes a while to spawn all the containers.)
+docker-compose --verbose up -t 600 --no-recreate. 
+(go play a table top gome. Takes a while to spawn all the containers. For me 1 1/2 Hours local coal install)
 
-Note: For Trinton you need to set DOCKER_TLS_VERIFY=1 (even though sdc-docker setup unsets it) otherwise compose does not talk to the remote docker. (Bug???) 
+Note: For local coal (Vmware SDC installation) you need to set DOCKER_TLS_VERIFY=1 (even though sdc-docker setup unsets it) otherwise compose does not talk to the remote docker. (Bug???). You also need a lot of RAM. 12GB+. 
+For me compose did brake a few times. Then I had to delete the last created containe and rerun the command. 
+Not sure if thats a compose problem are ressource problem in coal. 
 
 When done docker-compose multiplexes all docker logs so you can watch what goes on in each container.
 
